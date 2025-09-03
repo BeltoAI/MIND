@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root { color-scheme: light dark; }
+
+body {
+  /* aurora background */
+  background:
+    radial-gradient(1200px 800px at 20% 20%, rgba(99,102,241,.18), transparent 45%),
+    radial-gradient(900px 600px at 80% 0%, rgba(16,185,129,.18), transparent 40%),
+    radial-gradient(1000px 700px at 50% 100%, rgba(236,72,153,.12), transparent 45%),
+    linear-gradient(180deg, #f7f7fb, #eef2ff 30%, #ffffff 60%) no-repeat fixed;
+}
+html.dark body {
+  background:
+    radial-gradient(1200px 800px at 20% 20%, rgba(99,102,241,.15), transparent 45%),
+    radial-gradient(900px 600px at 80% 0%, rgba(16,185,129,.15), transparent 40%),
+    radial-gradient(1000px 700px at 50% 100%, rgba(236,72,153,.12), transparent 45%),
+    linear-gradient(180deg, #0b0f1a, #0a0f24 40%, #0b1222 80%) no-repeat fixed;
+}
+
+/* react-d3-tree link styling by depth */
+.link-depth-0 { stroke: rgba(99,102,241,.9); stroke-width: 2.5px; fill: none; }
+.link-depth-1 { stroke: rgba(34,211,238,.85); stroke-width: 2px;  fill: none; }
+.link-depth-2 { stroke: rgba(52,211,153,.85); stroke-width: 1.8px; fill: none; }
+.link-depth-3 { stroke: rgba(245,158,11,.85); stroke-width: 1.6px; fill: none; }
